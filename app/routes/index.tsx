@@ -9,3 +9,7 @@ export const links: LinksFunction = () => {
 export default function IndexRoute() {
   return <div>Hello Index Route</div>;
 }
+
+export function ErrorBoundary() {
+  return <div className="error-container">I did a whoopsies.</div>;
+}
