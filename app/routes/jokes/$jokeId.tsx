@@ -11,7 +11,9 @@ export const loader: LoaderFunction = async ({ params }) => {
   });
 
   if (!joke) throw new Error("Joke not found");
+
   const data: LoaderData = { joke };
+
   return json(data);
 };
 
